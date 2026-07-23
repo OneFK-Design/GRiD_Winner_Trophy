@@ -17,6 +17,13 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+
+      model-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the model */
+  align-items: center;     /* Vertically centers the model */
+  min-height: 100vh;       /* Sets container to full screen height */
+}
     }
     model-viewer { 
       width: 80%; 
@@ -25,7 +32,8 @@
   </style>
 </head>
 <body>
-
+  
+<div class="model-container">
   <model-viewer 
     src="./gold-trophy.glb" 
     ar 
@@ -34,6 +42,8 @@
     shadow-intensity="1"
     alt="Winner Trophy">
   </model-viewer>
+</div>
 
+  
 </body>
 </html>
