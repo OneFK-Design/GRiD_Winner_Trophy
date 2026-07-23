@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D Trophy</title>
+  <title>GRiD 8.0 Winner</title>
   <!-- Google's model-viewer script -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
   <style>
@@ -12,7 +12,11 @@
       width: 100vw; 
       height: 100vh; 
       overflow: hidden; 
-      background-color: #ffffff; 
+     background-image: url('./BG.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     }
     model-viewer { 
       width: 100%; 
@@ -23,12 +27,12 @@
 <body>
 
   <model-viewer 
-    src="./gold-trophy-optimized.glb" 
+    src="./gold-trophy.glb" 
     ar 
     auto-rotate 
     camera-controls 
     shadow-intensity="1"
-    alt="3D Trophy">
+    alt="Winner Trophy">
   </model-viewer>
 
 </body>
