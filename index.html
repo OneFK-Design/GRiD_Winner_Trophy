@@ -32,11 +32,20 @@ model-viewer {
   width: 50%;
   height: 50%;
 }
+      
+      .grid-container {
+  display: grid;
+  place-items: center; /* Centers both horizontally and vertically simultaneously */
+  height: 100vh;       /* Gives the container height */
+}
     
   </style>
 </head>
 <body>
-  
+    <div class="grid-container">
+    <img src="https://imgur.com/ZfcZJSk.png" style="display: block; max-width: 1000px;">
+    </div>
+   
 <div class="model-container">
   <model-viewer 
     src="./gold-trophy.glb" 
